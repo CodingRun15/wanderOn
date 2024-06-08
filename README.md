@@ -4,19 +4,19 @@
  <h2>The folder struxture is as follows</h2>
  ```
 📦 
-├─ .gitattributes
-├─ README.md
-├─ backend
-│  ├─ .gitignore
-│  ├─ configs
-│  │  ├─ .env
-│  │  └─ db.js
-│  ├─ controller
-│  │  └─ authController.js
-│  ├─ index.js
-│  ├─ middleware
-│  │  └─ auth.js
-│  ├─ models
+├─ .gitattributes</br>
+├─ README.md</br>
+├─ backend</br>
+│  ├─ .gitignore</br>
+│  ├─ configs</br>
+│  │  ├─ .env</br>
+│  │  └─ db.js</br>
+│  ├─ controller</br>
+│  │  └─ authController.js</br>
+│  ├─ index.js</br>
+│  ├─ middleware</br>
+│  │  └─ auth.js</br>
+│  ├─ models</br>
 │  │  ├─ blacklist.js
 │  │  └─ userModel.js
 │  ├─ package.json
