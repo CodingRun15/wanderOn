@@ -2,21 +2,21 @@
  # Description
  <p>Designed a signup signin page using jwt and maintaining a session. The project involes using XSS to sanitise input and validation for taking valid inputs. </p>
  <h2>The folder struxture is as follows</h2>
- ```
+<div>
 📦 
-├─ .gitattributes</br>
-├─ README.md</br>
-├─ backend</br>
-│  ├─ .gitignore</br>
-│  ├─ configs</br>
-│  │  ├─ .env</br>
-│  │  └─ db.js</br>
-│  ├─ controller</br>
-│  │  └─ authController.js</br>
-│  ├─ index.js</br>
-│  ├─ middleware</br>
-│  │  └─ auth.js</br>
-│  ├─ models</br>
+├─ .gitattributes
+├─ README.md
+├─ backend
+│  ├─ .gitignore
+│  ├─ configs
+│  │  ├─ .env
+│  │  └─ db.js
+│  ├─ controller
+│  │  └─ authController.js
+│  ├─ index.js
+│  ├─ middleware
+│  │  └─ auth.js
+│  ├─ models
 │  │  ├─ blacklist.js
 │  │  └─ userModel.js
 │  ├─ package.json
@@ -48,7 +48,7 @@
    │     ├─ SignIn.jsx
    │     └─ SignUp.jsx
    └─ vite.config.js
-```
+</div>
 # Tech Stack
 <h2>Frontend</h2>
 1. React
