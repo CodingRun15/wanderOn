@@ -61,10 +61,14 @@
 <h2>Backend</h2>
 1. Node.js
 2. Express.js
+
+# Database
+MongoAtlas
 # Tools
 1. XSS
 2. bcrypt
 3. jsonwebtoken
+
 # Installation
 <h2>Frontend</h2>
 cd client
