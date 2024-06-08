@@ -15,7 +15,7 @@ app.use(session({
   rolling:true,
   }))
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://wander-on-six.vercel.app/');
+    res.header('Access-Control-Allow-Origin', 'https://wander-on-six.vercel.app/' || 'http://localhost:5173' );
     res.header('Access-Control-Allow-Credentials', 'true');
     next();
 });
