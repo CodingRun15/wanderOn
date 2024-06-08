@@ -20,7 +20,7 @@ app.use((req, res, next) => {
     next();
 });
 app.use(cors({
-  origin:'https://wander-on-six.vercel.app/',
+  origin:'https://wander-on-six.vercel.app/' || 'http://localhost:5173',
   credentials:true,
 }));
 app.use(helmet());
