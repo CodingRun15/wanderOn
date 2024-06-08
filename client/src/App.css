@@ -1,0 +1,97 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body{
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+#app{
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  max-width: 330px;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+.signup-form{
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  input:focus-visible{
+    border: 3px solid rgb(69, 6, 240);
+  }
+  button{
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+   color :black;
+   
+  }
+  button:hover{
+    background-color: rgb(62, 51, 212);
+  background-blend-mode: color-burn;
+  color: white;
+
+  }
+}
+.dashboard{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   button{
+     padding: 10px;
+     margin: 10px 0;
+     border-radius: 10px;
+     cursor: pointer;
+    color :black;
+    font-weight: 500;
+    font-size: 20px;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+    button:hover{
+      background-color: cornflowerblue;
+      color :antiquewhite;
+      font-weight: 500;
+    }
+   }
+   .head-text{
+      animation: bounce 3s 1s ease-in-out infinite;
+   }
+   @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+   }
+
