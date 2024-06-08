@@ -15,12 +15,12 @@ app.use(session({
   rolling:true,
   }))
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.header('Access-Control-Allow-Origin', 'https://wander-on-six.vercel.app/');
     res.header('Access-Control-Allow-Credentials', 'true');
     next();
 });
 app.use(cors({
-  origin:'http://localhost:5173',
+  origin:'https://wander-on-six.vercel.app/',
   credentials:true,
 }));
 app.use(helmet());
