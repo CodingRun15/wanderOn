@@ -15,7 +15,7 @@ const handleSubmit = (e)=>{
     password:  password.current.value,
   }
 
-  fetch('http://localhost:4000/auth/signup  ',{
+  fetch('https://wanderon-2ihc.onrender.com/auth/signup',{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
