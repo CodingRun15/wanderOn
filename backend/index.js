@@ -14,14 +14,22 @@ app.use(session({
   saveUninitialized:false,
   rolling:true,
   }))
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://wander-on-six.vercel.app/' || 'http://localhost:5173' );
-    res.header('Access-Control-Allow-Credentials', 'true');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', 'https://wander-on-six.vercel.app/' || 'http://localhost:5173' );
+//     res.header('Access-Control-Allow-Credentials', 'true');
+//     next();
+// });
+const allowedOrigins = ['https://wander-on-six.vercel.app', 'http://localhost:5173'];
+
 app.use(cors({
-  origin:'https://wander-on-six.vercel.app/' || 'http://localhost:5173',
-  credentials:true,
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
 app.use(helmet());
 app.use(cookie());
